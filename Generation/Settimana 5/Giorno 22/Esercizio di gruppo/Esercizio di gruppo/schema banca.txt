@@ -1,0 +1,76 @@
++------------------------------------------------------+
+|                      Classes.Bank                   |
++------------------------------------------------------+
+| - Accounts : List<BankAccount>                      |
+| - Transactions : List<Transaction>                  |
++------------------------------------------------------+
+| + Bank()                                            |
+|   --------------------------------------------------|
+|   Accounts = new List<BankAccount>();               |
+|   Transactions = new List<Transaction>();           |
+| + AddAccount(account: BankAccount): void           |
+| + AddTransaction(transaction: Transaction): void   |
++------------------------------------------------------+
+                  ^
+                  |
++------------------------------------------------------+
+|               Classes.BankAccount (abstract)         |
++------------------------------------------------------+
+| - Number : string {get;}                             |
+| - Owner : string {get; set;}                         |
+| - Balance : decimal {get;}                           |
+| - s_accountNumberSeed : int = 1234567890             |
+| - _allTransactions : List<Transaction>              |
+| - _minimumBalance : decimal {readonly}              |
++------------------------------------------------------+
+| + BankAccount(name: string,                          |
+|   initialBalance: decimal)                           |
+|   -------------------------------------------------- |
+|   this(name, initialBalance, 0);                     |
+| + BankAccount(name: string,                          |
+|   initialBalance: decimal, minimumBalance: decimal)  |
+|   -------------------------------------------------- |
+|   Number = s_accountNumberSeed.ToString();           |
+|   s_accountNumberSeed++;                             |
+|   Owner = name;                                      |
+|   _minimumBalance = minimumBalance;                  |
+|   if (initialBalance > 0)                            |
+|       MakeDeposit(initialBalance, DateTime.Now,      |
+|       "Initial balance");                            |
+| + MakeDeposit(amount: decimal,                       |
+|   date: DateTime, note: string)                      |  
+| + MakeWithdrawal(amount: decimal,                    |
+|   date: DateTime, note: string)                      |  
+| # PerformMonthEndTransactions(): void (abstract)     |
++------------------------------------------------------+
+                  ^
+                  |
+     +-----------------------------------+
+     |                                   |
++--------------------+        +--------------------+        +--------------------+
+| InterestEarning    |        | LineOfCredit      |        | GiftCard           |
+| Account            |        | Account           |        | Account            |
++--------------------+        +--------------------+        +--------------------+
+| + InterestEarningAccount(  |                   |                       |
+|   name: string,             |                   |                       |
+|   initialBalance: decimal)  |                   |                       |
+|   ------------------------- |                   |                       |
+|   base(name, initialBalance)|                   |                       |
+| + PerformMonthEndTransactions() : void         |                       |
+|   (overrides)              |                   |                       |
++--------------------+        +--------------------+        +--------------------+
+
++------------------------------------------------------+
+|                Classes.Transaction                   |
++------------------------------------------------------+
+| - Amount : decimal {get;}                            |
+| - Date : DateTime {get;}                             |
+| - Notes : string {get;}                              |
++------------------------------------------------------+
+| + Transaction(amount: decimal,                       |
+|   date: DateTime, note: string)                      |
+|   -------------------------------------------------- |
+|   Amount = amount;                                   |
+|   Date = date;                                       |
+|   Notes = note;                                      |
++------------------------------------------------------+

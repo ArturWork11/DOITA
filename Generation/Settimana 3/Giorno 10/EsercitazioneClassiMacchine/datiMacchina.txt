@@ -1,0 +1,6 @@
+Ferrari;Testa Rossa;Rossa;2022;S;S
+BMW;M5;Grigio;2018;S;N
+Ferrari;Bho;Verde;1998;S;N
+Fiat;Panda;Gialla;2002;S;N
+Fiat;Panda;Rossa;2021;N;N
+Fiat;500;Rosa;2023;S;S

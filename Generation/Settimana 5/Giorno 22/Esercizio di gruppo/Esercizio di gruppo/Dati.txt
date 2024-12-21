@@ -1,0 +1,7 @@
+﻿LineOfCreditAccount;Anna Rossi;96808;3000
+GiftCardAccount;Stefano Bianchi;7430
+LineOfCreditAccount;Lorenzo Ricci;50;2500
+GiftCardAccount;Chiara Conti;644
+InterestEarningAccount;Gianfranco Moretti;6246
+GiftCardAccount;Alessandro Ferrari;89630
+InterestEarningAccount;Lucia Aligheri;78000

@@ -1,0 +1,3 @@
+Mauro,10,pediatria,8,3
+claudio,12,chirurgia,20,5
+luigi,9,anatomia,17,8
