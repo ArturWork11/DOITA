@@ -66,7 +66,7 @@ main {
     margin: 0 auto;
 }
 
-main img {
+main .pfp {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -108,7 +108,7 @@ footer {
         margin: 0.5rem 0;
     }
 
-    main img {
+    main .pfp {
         width: 120px;
         height: 120px;
     }
@@ -121,3 +121,64 @@ footer {
         padding: 1.5rem;
     }
 }
+
+.rotate:hover{
+    transform: rotate(360deg);
+    transition: transform 2s ease;
+}
+
+
+.slider {
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    margin: 50px auto;
+  }
+  
+.slider img {
+    width: 300px;
+    animation: slide 10s infinite;
+  }
+
+@keyframes slide {
+    0%, 20% { transform: translateX(0); }
+    25%, 45% { transform: translateX(-300px); }
+    50%, 70% { transform: translateX(-600px); }
+    75%, 100% { transform: translateX(0); }
+  }
+
+  .loading-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 30px;
+    margin: 50px auto;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .loading-bar{
+    height: 100%;
+    width: 0%;
+    background-color: #3498db;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+    animation: progress 5s linear infinite;
+  }
+
+  .loading-container:hover .loading-bar{
+    animation-play-state: paused;
+  }
+
+  @keyframes progress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
