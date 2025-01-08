@@ -1,0 +1,158 @@
+<!-- 
+HTML: Hyper Text Markup Language.
+NON è un linguaggio di programmazione per cui non è possibile inserire condizioni, selezioni, variabili ecc.
+L'HTML è appunto un linguaggio che permette di definire la struttura (scheletro o telaio) di una pagina sulla quale poi
+verrà aggiunta logica (tramtie javascript) e grafica (tramite CSS).
+
+L'HTML utilizza elementi chiamati tag la cui sintassi è la seguente: <NOMETAG> CONTENUTO </NOMETAG> 
+non è case sensitive, il CONTENUTO di un tag può essere formato o da altri tag annidati o da testo.
+i tag oltre al contenuto possono avere degli attributi che vanno a potenziare o specificare alcune funzionalità del tag
+la sintassi per inseire degli attributi è la seguente: <NOMETAG nomeAttrib1="valore" nomeAttrib2="valore"> CONTENUTO </NOMETAG>
+
+-->
+
+<HTML>
+<HEAD>
+    <!-- Il tag <title> permette di inserire un'intestazione (un testo) all'interno della tab della pagina sul browser -->
+    <title>La mia prima pagina HTML</title>
+</HEAD>
+<BODY>
+    <!-- 
+    Il tag <div> è un tag principalmente sturtturale, permette di crerare dei blocchi e quindi suddividere agevolmente
+    la struttura della pagina HTML.
+    -->
+    <div style="background-color: rgb(0, 204, 255);">
+        <!-- il tag <br> permette di andare a capo -->
+        TESTO NEL DIV <br> 
+        TEST A CAPO
+        <p>
+            Paragrafo nel div
+        </p>
+    </div>
+    <!-- il tag <p> è un tag principalmente di impaginazione, si utilizza per creare paragragfi di testo-->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa nesciunt fugiat. Omnis labore quidem impedit voluptatem accusamus provident molestias architecto. Nostrum delectus eius sunt cupiditate ratione dolorem optio omnis?
+        Molestias quisquam quod optio ipsum consectetur fugit, nam minima pariatur sapiente possimus commodi modi! Vero fugiat, cum corporis aut qui laboriosam illum rem itaque doloribus, asperiores id dolorem veritatis esse!
+    
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cum ad eligendi nostrum voluptas, recusandae harum deserunt quod amet ducimus eveniet adipisci voluptatum ullam architecto. Fuga similique atque reprehenderit repellat?
+    </p>
+    <!-- Intestazioni, tag <h1...6> servono a creare velocemente titolo, sottotitioli ecc.-->
+    <h1>Intestazione h1</h1>
+    <h2>Intestazione h2</h2>
+    <h3>Intestazione h3</h3>
+    <h4>Intestazione h4</h4>
+    <h5>Intestazione h5</h5>
+    <h6>Intestazione h6</h6>
+
+    <!-- Elenchi puntati, per fare elenchi puntanti non ordinati si utilizza il tag <ul> con i tago <li> -->
+    <ul>
+        <li>Primo</li>
+        <li>Secondo</li>
+        <li>Terzo</li>
+        <li>Quarto</li>
+    </ul>
+
+    <!-- Per fare invece gli elenchi puntati ordinati si usa <ol> con <li> -->
+    <!-- i tag <b>, <i>, <s>, <u> servono a formattare il testo rispettivamente in grassetto, corsivo, barrato e sottolineato -->
+        <ol>
+        <li><b>Primo</b></li>
+        <li><i>Secondo</i></li>
+        <li><s>Terzo</s></li>
+        <li><u>Quarto</u></li>
+    </ol>
+
+    <!-- il tag <hr> crea una riga orizzontale -->
+    <hr>
+
+    <!-- il tag <table> (e tutti i tag annessi come <tr>, <td>, <th>, <thead>, <tbody>, <tfoot>) permette la creazione di una tabella
+    la tabella è molto utile anche per creare il layout della pagina HTML stessa quando diventa ostico da fare tramite CSS
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Lunedi</th>
+                <th>Martedi</th>
+                <th>Mercoledi</th>
+                <th>Giovedi</th>
+                <th>Venerdi</th>
+                <th>Sabato</th>
+                <th>Domenica</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td colspan="2">13awdawdawdwdwad</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- i <form> sono importanti elementi di una pagina HTML che permettono all'utente l'inserimento di informazioni
+    servono quindi a creare dei moduli da compilare
+    -->
+    <br>
+    <hr>
+    <br>
+    <form action="" method="">
+        <label for="persona-nome">Campo di testo: </label>
+        <input type="text" name="persona-nome" placeholder="Nome persona">
+        <br>
+
+        <label>Campo di testo per password: </label>
+        <input type="password" placeholder="Nome persona">
+        <br>
+
+        <label>Campo numerico</label>
+        <input type="number" step="2">
+        <br>
+
+        <label>Date: </label>
+        <input type="date">
+        <br>
+
+        <label>Range: </label>
+        <input type="range">
+        <br>
+
+        <label>Checkbox</label>
+        <input type="checkbox">
+        <br>
+
+        <label>Menu a tendina</label>
+        <select>
+            <option value="valoreOpzione1">Opzione 1</option>
+            <option value="valoreOpzione2">Opzione 2</option>
+            <option value="valoreOpzione3">Opzione 3</option>
+            <option value="valoreOpzione4">Opzione 4</option>
+        </select>
+        <br>
+        
+        <input type="submit" value="INVIA DATI">
+    </form>
+
+    <button>CLICCAMI</button>
+    <br>
+    <!-- Tag multimediali -->
+    <img src="res/jupiter.jpg" alt="Qui immagine di Giove" width="400px" height="400px">
+    <video src=""></video>
+    <audio src=""></audio>
+
+    <!-- Link -->
+    <br>
+    <a href="grafica.html">Vai alla pagina Grafica</a>
+</BODY>
+</HTML>

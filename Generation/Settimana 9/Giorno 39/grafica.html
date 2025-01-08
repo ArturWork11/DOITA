@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina con grafica CSS</title>
+    <!-- Per poter utilizzare del codice CSS all'interno della pagina abbiamo due modalità:
+        1- Utilizzando il tag <style> all'interno del tag <head>
+        2- Importando un file *.css dall'esterno della pagina tramite il tag <link>
+    -->
+    <link rel="stylesheet" href="styles/stili.css">
+
+    <style>
+        /* CODICE CSS */
+        /* 
+        body{
+            background-color: brown;
+        } 
+        */
+    </style>
+</head>
+<body>
+    <!-- All'interno dei tag possiamo inserire gli attributi class o id che servono a dare un identificativo di classe oppure univoco
+    e ciò ci permette e ci agevola nella selezione di alcuni tag
+    -->
+    <h1>Benvenuto nella pagina</h1>
+    <div>
+        TESTO DEL DIV
+        <p>
+            P innestato in un div <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tenetur, tempora temporibus impedit vel sapiente, voluptate voluptatum voluptatem facilis facere quia, eligendi quod omnis unde architecto harum reprehenderit error enim?
+        </p>
+        <p id="id-1">
+            P specifico
+        </p>
+    </div>
+
+    <p>
+        P da solo <br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae cumque eius, blanditiis ipsum quos eveniet eos ut dolore vero animi voluptatibus pariatur quidem iure. Quidem dolorem corporis iure laborum velit.
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto deserunt id ad sapiente aliquid, cupiditate tenetur minus, harum modi illo fugiat expedita et dicta perspiciatis debitis adipisci nobis. Quas, iste!
+    </p>
+
+    <div class="container">
+        <div class="liste">
+            TESTO DEL DIV
+            <ul>
+                <li>Mario</li>
+                <li>Luigi</li>
+                <li>Roberto</li>
+            </ul>
+        </div>
+    
+        <div class="liste">
+            TESTO DEL DIV
+            <ol>
+                <li>Primo</li>
+                <li>Secondo</li>
+                <li>Terzo</li>
+            </ol>
+        </div>
+    </div>
+    <div>
+        <table id="tabella-persone">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Cognome</th>
+                    <th>Data Nascita</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mario</td>
+                    <td>Rossi</td>
+                    <td>01/01/1980</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Luigi</td>
+                    <td>Verdi</td>
+                    <td>02/02/1985</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Giulia</td>
+                    <td>Bianchi</td>
+                    <td>03/03/1990</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Anna</td>
+                    <td>Neri</td>
+                    <td>04/04/1995</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

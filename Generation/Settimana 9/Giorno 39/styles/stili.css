@@ -1,0 +1,101 @@
+/* 
+CSS: Cascading Style Sheet.
+E' un linguaggio che permette di definire delle regole di stile per gli elementi della pagina HTML
+nel CSS si fa uso di regole e selettori per selezionare gli elementi ed applicare lo stile voluto
+
+
+i Selettori nel css sono degli strumenti che ci aiutano a selezionare gli elementi dalla pagina html
+*/
+
+/* Selettore globale - permette di selezionare tutto dalla pagina html
+
+*{
+   background-color: aquamarine;
+   font-size: 15pt;
+}
+
+*/
+
+/* Selettore di elementi (tag) */
+
+p{
+    background-color: burlywood;
+    margin: 15px;
+    padding: 20px;
+}
+
+ul,ol{
+    background-color: cadetblue;
+    color: crimson;
+    font-size: 15pt;
+}
+
+/* Selettore dei discendenti - in questo caso seleziona tutti i tag p diretti discendenti e NON di un tag div */
+div p{
+    background-color: aqua;
+}
+
+/* Selettore dei figli - seleziona in questo caso tutti i tag p diretti discendenti (figli) di un tag div */
+div > p{
+    background-color: brown;
+}
+
+/* Selettore di consecutivi - seleziona in questo caso il tag div scritto appena dopo un tag p */
+p + div {
+    color: blue;
+}
+
+
+/* Selettore per id - seleziona l'elemento tramite il suo id */
+#id-1{
+    color: aqua;
+    background-color: blueviolet;
+}
+
+#tabella-persone{
+    border: medium solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tabella-persone td{
+    text-align: center;
+}
+
+#tabella-persone>thead tr{
+    background-color: rgb(236, 172, 151);
+    font-size: 15pt;
+}
+
+#tabella-persone>tbody tr:nth-child(odd){
+    background-color: rgb(219, 131, 101);
+}
+
+#tabella-persone>tbody tr:nth-child(even){
+    background-color: rgb(198, 118, 91);
+}
+
+#tabella-persone>tbody tr:hover{
+    background-color: bisque;
+}
+
+
+/* Selettore delle classi - seleziona tutti gli elementi con la classe specificata */
+.container{
+    display: flex;
+    justify-content: right;
+}
+
+.liste{
+    width: 500px;
+    margin: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: darkgray;
+}
+
+/* body{
+    background-image: url("../res/jupiter.jpg");
+    background-size: cover;
+} */

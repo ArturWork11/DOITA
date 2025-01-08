@@ -1,0 +1,25 @@
+<mxfile host="65bd71144e">
+    <diagram id="P0p53d_Gh3y2JdA5hx7Q" name="Page-1">
+        <mxGraphModel dx="936" dy="1874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="HTML" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=18;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="110" width="530" height="630" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="HEAD" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=18;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="150" width="510" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="BODY" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=18;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="260" width="510" height="470" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="L'HEAD permette l'inserimento di metadati, quindi informazioni utili al browser e alla pagina che non sono visibili ad occhio nudo (nel 99% dei casi).&amp;nbsp;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fontSize=18;position2=0;size=30;position=0.08;align=left;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="-80" width="320" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Il BODY contiente la parte visiva della pagina, la struttura vera e propria, quindi tutti gli elementi che poi verranno renderizzati dal brawser." style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fontSize=18;position2=0;size=40;position=0.03;align=left;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="240" width="340" height="230" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
