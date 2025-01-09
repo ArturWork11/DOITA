@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina con javascript</title>
+    <!-- 
+        Per incorporare un codice javascript all'interno della pagina, abbiamo due modalità
+        1. Utilizzando il tag <script>, quindi scrivendo il codice all'interno
+            2. Importando un file *.js esterno
+            -->
+        </head>
+        <body>
+            <div> JAVA SCRIPT</div>
+            <!-- Collego all'evento -->
+            <button onclick="funzione2(3,10)">CLICCAMI PER AVVIARE LA FUNZIONE 2</button>
+            <!-- Uso il tag p per inserire un testo da JavaScript -->
+            <button onclick="funzione3()">INSERISCI TESTO</button>
+            <button onclick="popolaTabella()">Popola tabella</button>
+            <p id="paragrafo"></p>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Cognome</th>
+                        <th>Età</th>
+                    </tr>
+                </thead>
+                <tbody id="tabella">
+                </tbody>
+            </table>
+        </body>
+        <script src="file1.js"></script>
+        <script src="funzioni.js"></script>
+</html>
